@@ -13,3 +13,7 @@ c:\users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.pdb
 c:\users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.Regestration.resources
 c:\users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.User__main.resources
 C:\Users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.Add__car.resources
+C:\Users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.AutoService__main.resources
+C:\Users\isles\source\repos\ClientMarch\ClientMarch\obj\Debug\ClientMarch.Service__info__add.resources
+C:\Users\isles\source\repos\ClientMarch\ClientMarch\bin\Debug\GMap.NET.Core.dll
+C:\Users\isles\source\repos\ClientMarch\ClientMarch\bin\Debug\GMap.NET.WindowsForms.dll

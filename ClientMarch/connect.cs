@@ -29,7 +29,7 @@ namespace ClientMarch
                 us.error(answer.Split('$')[0]);
                 return us;
             }
-            us.post__user((answer.Split('$')[0]),( answer.Split('$')[5] ),( answer.Split('$')[2]+" "+ answer.Split('$')[3]+" "+ answer.Split('$')[4] ), answer.Split('$')[1],answer.Split('$')[5]);
+            us.post__user((answer.Split('$')[0]),( answer.Split('$')[5] ),( answer.Split('$')[2]+" "+ answer.Split('$')[3]+" "+ answer.Split('$')[4] ), answer.Split('$')[1],answer.Split('$')[6]);
             return us;
         }
         public user connecting()
@@ -98,6 +98,20 @@ namespace ClientMarch
             int lenght = socket.Receive(receive);
             string answer = Encoding.UTF8.GetString(receive, 0, lenght);
             return answer;
+        }
+
+        public string Connect__Service(string token)
+        {
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socket.Connect(ip, port);
+
+            socket.Send(Encoding.UTF8.GetBytes("Service/IN/" + token));
+
+            int lenght = socket.Receive(receive);
+            string answer = Encoding.UTF8.GetString(receive, 0, lenght);
+
+            return answer;
+
         }
     }
 }

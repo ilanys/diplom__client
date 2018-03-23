@@ -57,15 +57,14 @@ namespace ClientMarch
 
                     switch(us.get__type())
                     {
-                        case "Автосервис": { break; }
-                        case "Пользователь": {
-
-                                User__main user__main = new User__main(us);
-                                user__main.Show();
+                        case "Автосервис": {
+                                AutoService__main Service = new AutoService__main(us);
+                                Service.Show();
                                 this.Hide();
 
                                 break; }
-                        default: {
+                        case "Пользователь": {
+
                                 User__main user__main = new User__main(us);
                                 user__main.Show();
                                 this.Hide();

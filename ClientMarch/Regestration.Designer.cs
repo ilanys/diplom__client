@@ -145,6 +145,7 @@
             this.metroComboBox1.Size = new System.Drawing.Size(199, 29);
             this.metroComboBox1.TabIndex = 8;
             this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroComboBox1.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
             // metroLabel5
             // 

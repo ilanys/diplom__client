@@ -14,11 +14,15 @@ namespace ClientMarch
         private string email;
         private string errors="";
         private string types = "";
+        public string  location = "";
+        private string offical__name = "";
+        private string Activate = "";
+
         public void post__user(string logins, string tokens, string names, string emails, string type)
         {
             login = logins;
             token = tokens;
-            name = names;
+            name = names.Split(' ')[0];
             email = emails;
             types = type;
         }
@@ -44,6 +48,13 @@ namespace ClientMarch
         public string get__name()
         {
             return name;
+        }
+        public bool Service__in(string locations, string offical__names, string Activates)
+        {
+            location = locations;
+            offical__name = offical__names;
+            Activate = Activates;
+            return true;
         }
     }
 }

@@ -45,5 +45,13 @@ namespace ClientMarch
         {
 
         }
+
+        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (metroComboBox1.SelectedItem.ToString() == "Автосервис")
+                metroLabel6.Text = "Название сервиса";
+            else
+                metroLabel6.Text = "Ваше имя";
+        }
     }
 }
